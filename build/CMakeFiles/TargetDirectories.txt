@@ -1,0 +1,3 @@
+/shared/foss-18/AlphaMatting/build/CMakeFiles/rebuild_cache.dir
+/shared/foss-18/AlphaMatting/build/CMakeFiles/alphamatting.dir
+/shared/foss-18/AlphaMatting/build/CMakeFiles/edit_cache.dir

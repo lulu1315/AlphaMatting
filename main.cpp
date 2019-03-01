@@ -8,24 +8,24 @@
 
 using namespace std;
 
-int main()
+int main(int argc, char* argv[])
 {
-    char fileAddr[64] = {0};
+    char fileAddr[256] = {0};
 
-    for (int n = 1; n < 28; ++n) {
+//    for (int n = 1; n < 28; ++n) {
         SharedMatting sm;
 
-        sprintf(fileAddr, "input/GT%d%d.png", n/10, n%10);
+        sprintf(fileAddr, argv[1]);
         sm.loadImage(fileAddr);
 
-        sprintf(fileAddr, "trimap/trimap1/GT%d%d.png", n/10, n%10);
+        sprintf(fileAddr, argv[2]);
         sm.loadTrimap(fileAddr);
 
         sm.solveAlpha();
 
-        sprintf(fileAddr, "result/GT%d%d.png", n/10, n%10);
+        sprintf(fileAddr, argv[3]);
         sm.save(fileAddr);
-    }
+ //   }
 
     return 0;
 }

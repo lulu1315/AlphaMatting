@@ -1063,35 +1063,35 @@ void SharedMatting::solveAlpha()
     clock_t start, finish;
     //expandKnown()
     start = clock();
-    cout << "Expanding...";
+    //cout << "Expanding...";
     expandKnown();
-    cout << "    over!!!" << endl;
+    //cout << "    .. done" << endl;
     finish = clock();
-    cout <<  double(finish - start) / (CLOCKS_PER_SEC * 2.5) << endl;
+    cout << "Expanding done in : " << double(finish - start) / (CLOCKS_PER_SEC * 2.5) << endl;
 
     //gathering()
     start = clock();
-    cout << "Gathering...";
+    //cout << "Gathering...";
     gathering();
-    cout << "    over!!!" << endl;
+    //cout << "    .. done" << endl;
     finish = clock();
-    cout <<  double(finish - start) / (CLOCKS_PER_SEC * 2.5) << endl;
+    cout <<  "Gathering done in : " << double(finish - start) / (CLOCKS_PER_SEC * 2.5) << endl;
 
     //refineSample()
     start = clock();
-    cout << "Refining...";
+    //cout << "Refining...";
     refineSample();
-    cout << "    over!!!" << endl;
+    //cout << "    .. done" << endl;
     finish = clock();
-    cout <<  double(finish - start) / (CLOCKS_PER_SEC * 2.5) << endl;
+    cout <<  "Refining done in : " << double(finish - start) / (CLOCKS_PER_SEC * 2.5) << endl;
 
     //localSmooth()
     start = clock();
-    cout << "LocalSmoothing...";
+    //cout << "LocalSmoothing...";
     localSmooth();
-    cout << "    over!!!" << endl;
+    //cout << "   .. done" << endl;
     finish = clock();
-    cout <<  double(finish - start) / (CLOCKS_PER_SEC * 2.5) << endl;
+    cout <<  "LocalSmoothing done in : " << double(finish - start) / (CLOCKS_PER_SEC * 2.5) << endl;
 
     //getMatte()
     getMatte();

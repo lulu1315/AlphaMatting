@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/shared/foss-18/AlphaMatting/sharedmatting.cpp
+sharedmatting.h
+/shared/foss-18/AlphaMatting/sharedmatting.h
+time.h
+-
+
+/shared/foss-18/AlphaMatting/sharedmatting.h
+iostream
+-
+opencv2/core/core.hpp
+-
+opencv2/highgui/highgui.hpp
+-
+cmath
+-
+vector
+-
+
